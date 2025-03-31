@@ -24,7 +24,7 @@ module Axe
                      :skipping,
                      :with_options
 
-      extend ChainMail::Chainable
+      extend AxeChainMail::Chainable
       chainable :within,
                 :excluding,
                 :according_to,

@@ -11,7 +11,7 @@ module Axe
       def_delegators :@audit, :failure_message, :failure_message_when_negated
       def_delegators :@run, :within, :excluding, :according_to, :checking, :checking_only, :skipping, :with_options
 
-      extend ChainMail::Chainable
+      extend AxeChainMail::Chainable
       chainable :within, :excluding, :according_to, :checking, :checking_only, :skipping, :with_options
 
       def initialize
